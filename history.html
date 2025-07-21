@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" style="style.css"/>
+  <title>History</title>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="beers.html">Beers</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<h1>History</h1>
+<p><em>How our story began...</em></p>
+
+<p>Robin woke up one day and decided it's time to brew his own beer. A man needs a project. 
+<li><b>09.06.2025</b> And there we were: at IKEA, 
+    trying to find the right sized pot for this endeavour. After succeeding with our first step and gathering all the materials, 
+    the important process began; following the instructions. After 3 hours, fucking up a couple of times by letting the pot run over, and losing half of the mout,
+    it was time to put the brew in the bucket and let it rest.</li>
+<li><b>27.06.2025</b> Three weeks later... finally time to put the mix into bottles, it is starting to look like something. 
+    As of now, we measure an alc. vol. of 8% </li></p>
+<li><b>22/24/25.07.2025</b> Time to test.</li>
+
+<img src="images/firstbrew1.png" alt="First brew" style="width: 200px;">
+<img src="images/firstbrew2.png" alt="First brew" style="width: 200px;">
+
+<h1>🍺 First Beer Taste Quiz</h1>
+<p>Did you like your first beer?</p>
+
+<input type="text" id="beerAnswer" placeholder="Type yes or no" />
+<button onclick="checkAnswer()">Submit</button>
+
+<p class="result" id="response"></p>
+
+<script>
+  function checkAnswer() {
+    const input = document.getElementById('beerAnswer').value.trim().toLowerCase();
+    const response = document.getElementById('response');
+
+    if (input === 'yes') {
+      response.textContent = "Cheers! You're on your way to becoming a true connoisseur 🍻";
+    } else if (input === 'no') {
+      response.textContent = "Try again… maybe the second one will be better 😅";
+    } else {
+      response.textContent = "Input invalid. Please type 'yes' or 'no'.";
+    }
+  }
+</script>
+
+<footer>
+  &copy; 2025 Brouwerij De Roodborst
+</footer>
+
+</body>
+</html>
